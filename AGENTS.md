@@ -25,9 +25,8 @@ Run lint and typecheck before declaring any task done.
 
 ## Navigation & Routing
 
-- Use **Expo Router** for all navigation. Routes live in `src/app/` — every file there is a screen, `_layout.tsx` files define navigators. Keep non-route code (components, hooks, utils) outside `src/app/`.
-- Import `Link`, `router`, and `useLocalSearchParams` from `expo-router`.
-- Docs: https://docs.expo.dev/router/introduction.md
+- **Do not add Expo Router, React Navigation, tab bars or drawers.** The assignment forbids navigation libraries and side/bottom bars.
+- Views are switched with state in `App.js` (`views` array + conditional rendering in `renderView()`). Add a new view by adding a case there.
 
 ## Building with EAS
 
